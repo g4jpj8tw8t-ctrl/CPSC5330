@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BaldwinJosephAdventureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gold_Statue" translatesAutoresizingMaskIntoConstraints="NO" id="1Wk-BJ-A71">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="adr-5Y-Mq5">
+                                <rect key="frame" x="50" y="40" width="293" height="792"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mf0-SU-29K">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="250.66666666666666"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COMI" translatesAutoresizingMaskIntoConstraints="NO" id="v5p-bC-ueL">
+                                                <rect key="frame" x="20" y="20" width="150" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="v5p-bC-ueL" secondAttribute="height" multiplier="50:27" id="ec2-Z2-hkU"/>
+                                                    <constraint firstAttribute="width" constant="150" id="nbc-64-iM9"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="v5p-bC-ueL" firstAttribute="leading" secondItem="Mf0-SU-29K" secondAttribute="leading" constant="20" id="2XD-1y-tSl"/>
+                                            <constraint firstItem="v5p-bC-ueL" firstAttribute="top" secondItem="Mf0-SU-29K" secondAttribute="top" constant="20" id="Kdc-D3-s6i"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu1-vy-3o2">
+                                        <rect key="frame" x="0.0" y="270.66666666666669" width="293" height="250.66666666666669"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Oh no! The Golden Ring Curse has turned your love Elaine into a Golden Statue! This statue was stolen by Captain LeChuck! We must save her!</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dVb-ca-Vru">
+                                        <rect key="frame" x="0.0" y="541.33333333333337" width="293" height="250.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bog-ub-A4G">
+                                                <rect key="frame" x="0.0" y="0.0" width="293" height="115.33333333333333"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Visit the mysterious voodoo lady for advice.">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pathChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFi-Ab-tMc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW9-ts-glL">
+                                                <rect key="frame" x="0.0" y="135.33333333333326" width="293" height="115.33333333333331"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Hunt down Captain LeChuck immediately.">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pathChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbz-EY-2Hk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wu1-vy-3o2" firstAttribute="height" secondItem="Mf0-SU-29K" secondAttribute="height" id="slg-mw-HpF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="adr-5Y-Mq5" secondAttribute="trailing" constant="50" id="Arr-Hb-Tse"/>
+                            <constraint firstItem="1Wk-BJ-A71" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="DGo-9Z-oB2"/>
+                            <constraint firstItem="1Wk-BJ-A71" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cmX-mS-bZW"/>
+                            <constraint firstItem="adr-5Y-Mq5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="ds3-nx-xc7"/>
+                            <constraint firstItem="1Wk-BJ-A71" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p69-sL-2du"/>
+                            <constraint firstItem="adr-5Y-Mq5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="uys-ov-8Fz"/>
+                            <constraint firstAttribute="bottom" secondItem="adr-5Y-Mq5" secondAttribute="bottom" constant="20" id="wJG-MV-hXq"/>
+                            <constraint firstAttribute="bottom" secondItem="1Wk-BJ-A71" secondAttribute="bottom" id="wi1-K8-oO1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="1Wk-BJ-A71" id="hNx-UQ-VSs"/>
+                        <outlet property="optionOne" destination="bog-ub-A4G" id="ybx-ch-Qhe"/>
+                        <outlet property="optionTwo" destination="HW9-ts-glL" id="vAL-G7-i48"/>
+                        <outlet property="questLabel" destination="Wu1-vy-3o2" id="hlz-zC-mxE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="COMI" width="800" height="432"/>
+        <image name="Gold_Statue" width="640" height="480"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
